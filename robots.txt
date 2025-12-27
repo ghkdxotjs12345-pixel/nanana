@@ -1,0 +1,15 @@
+# robots.txt for AI 블로그 글 생성기
+
+User-agent: *
+Allow: /
+
+# Disallow crawling of admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+# Crawl-delay: 1
+

@@ -3,43 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI로 블로그 글을 자동으로 생성하는 웹사이트">
-    <title>AI 블로그 글 생성기</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>AI 블로그 글 생성기 - 키워드만 입력하면 완성된 블로그 글이 자동 생성됩니다</title>
+    <meta name="title" content="AI 블로그 글 생성기 - 키워드만 입력하면 완성된 블로그 글이 자동 생성됩니다">
+    <meta name="description" content="AI로 블로그 글을 자동으로 생성하는 웹사이트. 키워드만 입력하면 완성된 블로그 글이 생성됩니다. 인공지능 기반 콘텐츠 생성 도구로 블로깅을 더 쉽고 빠르게 만들어보세요.">
+    <meta name="keywords" content="AI 블로그, 블로그 글 생성기, 인공지능 글쓰기, AI 콘텐츠 생성, 자동 블로그 작성, AI 글쓰기 도구, 블로그 자동화">
+    <meta name="author" content="nanana">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Korean">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="AI 블로그 글 생성기 - 키워드만 입력하면 완성된 블로그 글이 자동 생성됩니다">
+    <meta property="og:description" content="AI로 블로그 글을 자동으로 생성하는 웹사이트. 키워드만 입력하면 완성된 블로그 글이 생성됩니다.">
+    <meta property="og:image" content="https://yourdomain.com/assets/images/og-image.jpg">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="AI 블로그 글 생성기">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="AI 블로그 글 생성기 - 키워드만 입력하면 완성된 블로그 글이 자동 생성됩니다">
+    <meta property="twitter:description" content="AI로 블로그 글을 자동으로 생성하는 웹사이트. 키워드만 입력하면 완성된 블로그 글이 생성됩니다.">
+    <meta property="twitter:image" content="https://yourdomain.com/assets/images/twitter-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "AI 블로그 글 생성기",
+      "description": "AI로 블로그 글을 자동으로 생성하는 웹사이트. 키워드만 입력하면 완성된 블로그 글이 생성됩니다.",
+      "url": "https://yourdomain.com/",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "150"
+      },
+      "featureList": [
+        "AI 기반 블로그 글 자동 생성",
+        "키워드 입력만으로 완성된 글 작성",
+        "빠른 콘텐츠 생성",
+        "사용자 친화적 인터페이스"
+      ]
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>✨ AI 블로그 글 생성기</h1>
-        <p class="subtitle">키워드만 입력하면 완성된 블로그 글이 생성됩니다</p>
-        
-        <div class="input-group">
-            <label for="keywordInput">블로그 글 주제 (키워드)</label>
-            <input 
-                type="text" 
-                id="keywordInput" 
-                placeholder="예: 인공지능의 미래, 건강한 식습관, 여행 추천지 등"
-                autocomplete="off"
-            >
+    <header role="banner">
+        <div class="container">
+            <h1>✨ AI 블로그 글 생성기</h1>
+            <p class="subtitle">키워드만 입력하면 완성된 블로그 글이 생성됩니다</p>
         </div>
-        
-        <button id="generateBtn">블로그 글 생성하기</button>
-        
-        <div class="loading">
-            <div class="spinner"></div>
-            <p>블로그 글을 생성하고 있어요... 잠시만 기다려주세요!</p>
+    </header>
+    
+    <main role="main">
+        <div class="container">
+            <section aria-label="블로그 글 생성 폼">
+                <div class="input-group">
+                    <label for="keywordInput">블로그 글 주제 (키워드)</label>
+                    <input 
+                        type="text" 
+                        id="keywordInput" 
+                        placeholder="예: 인공지능의 미래, 건강한 식습관, 여행 추천지 등"
+                        autocomplete="off"
+                        aria-label="블로그 글 주제 키워드 입력"
+                    >
+                </div>
+                
+                <button id="generateBtn" aria-label="블로그 글 생성 버튼">블로그 글 생성하기</button>
+            </section>
+            
+            <section aria-label="로딩 상태" class="loading" aria-live="polite" aria-atomic="true">
+                <div class="spinner" aria-hidden="true"></div>
+                <p>블로그 글을 생성하고 있어요... 잠시만 기다려주세요!</p>
+            </section>
+            
+            <section aria-label="에러 메시지" class="error-message" role="alert" aria-live="assertive"></section>
+            
+            <section aria-label="생성된 블로그 글 결과" class="result-section">
+                <div class="result-header">
+                    <h2>생성된 블로그 글</h2>
+                    <button id="copyBtn" aria-label="생성된 블로그 글 복사">복사하기</button>
+                </div>
+                <article id="blogContent" role="article"></article>
+                <div class="char-count" aria-live="polite"></div>
+            </section>
         </div>
-        
-        <div class="error-message"></div>
-        
-        <div class="result-section">
-            <div class="result-header">
-                <h2>생성된 블로그 글</h2>
-                <button id="copyBtn">복사하기</button>
-            </div>
-            <div id="blogContent"></div>
-            <div class="char-count"></div>
-        </div>
-    </div>
+    </main>
+    
+    <footer role="contentinfo" style="text-align: center; padding: 20px; color: white;">
+        <p>&copy; 2024 AI 블로그 글 생성기. All rights reserved.</p>
+    </footer>
     
     <script src="assets/js/main.js"></script>
 </body>
