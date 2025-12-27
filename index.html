@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI로 블로그 글을 자동으로 생성하는 웹사이트">
+    <title>AI 블로그 글 생성기</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ AI 블로그 글 생성기</h1>
+        <p class="subtitle">키워드만 입력하면 완성된 블로그 글이 생성됩니다</p>
+        
+        <div class="input-group">
+            <label for="keywordInput">블로그 글 주제 (키워드)</label>
+            <input 
+                type="text" 
+                id="keywordInput" 
+                placeholder="예: 인공지능의 미래, 건강한 식습관, 여행 추천지 등"
+                autocomplete="off"
+            >
+        </div>
+        
+        <button id="generateBtn">블로그 글 생성하기</button>
+        
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>블로그 글을 생성하고 있어요... 잠시만 기다려주세요!</p>
+        </div>
+        
+        <div class="error-message"></div>
+        
+        <div class="result-section">
+            <div class="result-header">
+                <h2>생성된 블로그 글</h2>
+                <button id="copyBtn">복사하기</button>
+            </div>
+            <div id="blogContent"></div>
+            <div class="char-count"></div>
+        </div>
+    </div>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
